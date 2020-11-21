@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+
 
 export class HomeScreen extends Component {
 
@@ -9,10 +9,12 @@ export class HomeScreen extends Component {
         return (
             <View style={styles.container}>
                 <ScrollView>
+                    <Text>..</Text>
+
                     <Text>Kitsu es una api que trae información de distintos animes a través de un id, también posee
                     información de mangas y personajes entre otros en el apartado de anime puede traer por
                     id el titulo las fechas de inicio de fin la duración de los episodios la cantidad de capítulos ,
-                esta son solo algunos datos que trae la api .</Text>
+                    esta son solo algunos datos que trae la api .</Text>
 
                     <Text>..</Text>
 
@@ -46,9 +48,6 @@ export class HomeScreen extends Component {
 
                     <Text>DELETE Delete - remove resources</Text>
 
-                    <Text>..</Text>
-                    
-
 
                     <StatusBar style="auto" />
                 </ScrollView>
@@ -66,4 +65,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-});// shift alt f acomoda codigo
+});
+// shift alt f acomoda codigo
+//82 sena 
