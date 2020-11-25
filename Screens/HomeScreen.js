@@ -1,9 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView , Button } from 'react-native';
 
 
 export class HomeScreen extends Component {
+    
+    handlerLogout(){
+        this.props.onLogout();
+    }
 
     render() {
         return (
@@ -51,6 +55,12 @@ export class HomeScreen extends Component {
 
                     <StatusBar style="auto" />
                 </ScrollView>
+
+                <Text>Te has loggeado correctamente</Text>
+                <Button
+                    onPress={() => this.handlerLogout()}
+                    title="Cerrar sesión"
+                />
             </View>
         );
     }
@@ -61,7 +71,7 @@ export class HomeScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#41C2A5',
+        backgroundColor: '#6192C0',
         alignItems: 'center',
         justifyContent: 'center',
     },

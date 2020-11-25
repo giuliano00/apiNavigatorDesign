@@ -25,9 +25,14 @@ export class DrawerContentScreen extends Component {
                             onPress={() => this.props.navigation.navigate("Home")}
                         />
                         <DrawerItem
-                            icon={() => <Icon type="material-community" name="calendar" style={styles.icon} />}
+                            icon={() => <Icon type="material-community" name="all-inclusive" style={styles.icon} />}
                             label="API"
                             onPress={() => this.props.navigation.navigate("API")}
+                        />
+                        <DrawerItem
+                            icon={() => <Icon type="material-community" name="account" style={styles.icon} />}
+                            label="APIinfo"
+                            onPress={() => this.props.navigation.navigate("APIinfo")}
                         />
                     </View>
                 </DrawerContentScrollView>
@@ -37,6 +42,7 @@ export class DrawerContentScreen extends Component {
                         label="Configuration"
                         onPress={() => this.handlerConfiguration()}
                     />
+                    
                     <DrawerItem
                         icon={() => <Icon type="material-community" name="logout" style={styles.icon} />}
                         label="Logout"
@@ -51,7 +57,7 @@ export class DrawerContentScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#D1D1D1',
+        backgroundColor: '#49CBEE',
     },
     icon: {
         color: '#517fa4'
