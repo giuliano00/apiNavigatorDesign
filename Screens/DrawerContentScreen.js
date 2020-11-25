@@ -42,7 +42,7 @@ export class DrawerContentScreen extends Component {
                         label="Configuration"
                         onPress={() => this.handlerConfiguration()}
                     />
-                    
+
                     <DrawerItem
                         icon={() => <Icon type="material-community" name="logout" style={styles.icon} />}
                         label="Logout"

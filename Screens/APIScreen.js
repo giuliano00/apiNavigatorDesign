@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { Component ,Text} from 'react';
-import { StyleSheet , View, TextInput, Image, Button } from 'react-native';
+import React, { Component, Text } from 'react';
+import { StyleSheet, View, TextInput, Image, Button } from 'react-native';
 
 import axios from 'axios';
 

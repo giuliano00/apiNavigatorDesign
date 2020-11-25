@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Image, Button ,ScrollView} from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView } from 'react-native';
 import axios from 'axios';
 
 export class APIinfo extends Component {
@@ -11,7 +11,7 @@ export class APIinfo extends Component {
                     <Text>..</Text>
 
                     <Text>Kitsu es una api </Text>
-                    
+
                     <StatusBar style="auto" />
                 </ScrollView>
             </View>

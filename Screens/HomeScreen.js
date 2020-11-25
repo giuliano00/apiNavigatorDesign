@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView , Button } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 
 
 export class HomeScreen extends Component {
-    
-    handlerLogout(){
+
+    handlerLogout() {
         this.props.onLogout();
     }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, Image, View, Button } from 'react-native';
 
 import * as Google from 'expo-google-app-auth'
 

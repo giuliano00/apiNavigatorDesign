@@ -36,7 +36,7 @@ export default class App extends Component {
             drawerContent={props => <DrawerContentScreen {...props} onLogout={() => this.setLogout()} />}
           >
             <Drawer.Screen name="Home" component={HomeScreen} />
-            
+
           </Drawer.Navigator>
         </NavigationContainer>
 
