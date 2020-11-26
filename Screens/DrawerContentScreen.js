@@ -3,7 +3,7 @@ import { DrawerItem, DrawerContentScrollView } from '@react-navigation/drawer';
 import { View, StyleSheet } from "react-native";
 import { Icon } from 'react-native-elements'
 
-export class DrawerContentScreen extends Component {
+export  class DrawerContentScreen extends Component {
 
     handlerConfiguration() {
         console.log("Configuration");

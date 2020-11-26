@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { Component, Text } from 'react';
-import { StyleSheet, View, TextInput, Image, Button } from 'react-native';
+import React, { Component} from 'react';
+import { StyleSheet, View, Text, TextInput, Image, Button } from 'react-native';
 
 import axios from 'axios';
 
-export  class APIScreen extends Component {
+export default class APIScreen extends Component {
     state = {
         response: [],
         estado: false
@@ -79,7 +79,7 @@ export  class APIScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#6192C0',
+        backgroundColor: '#83DDF5',
         alignItems: 'center',
         justifyContent: 'center',
     },

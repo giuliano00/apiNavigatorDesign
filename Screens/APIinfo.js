@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView } from 'react-native';
 import axios from 'axios';
 
-export  class APIinfo extends Component {
+export default class APIinfo extends Component {
     render() {
         return (
             <View style={styles.container}>
