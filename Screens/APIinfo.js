@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView, ImageBackground } from 'react-native';
 import axios from 'axios';
 
 export default class APIinfo extends Component {
     render() {
         return (
-            <View style={styles.container}>
+            <ImageBackground source={require("./appimg/img/aapp.jpg")} style={styles.container}>
                 <ScrollView>
                     <Text>..</Text>
 
@@ -14,7 +14,7 @@ export default class APIinfo extends Component {
 
                     <StatusBar style="auto" />
                 </ScrollView>
-            </View>
+            </ImageBackground>
         );
     }
 
@@ -23,7 +23,7 @@ export default class APIinfo extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#49CBEE',
+        
         alignItems: 'center',
         justifyContent: 'center',
     },
