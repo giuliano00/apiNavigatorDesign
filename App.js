@@ -3,9 +3,17 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { DrawerDefaultNavigator } from './Navigators/DrawerDefaultNavigator';
 import { DrawerCustomNavigator } from './Navigators/DrawerCustomNavigator.js';
+import {DrawerContentScreen} from "./Screens/DrawerContentScreen";
+import { DrawerItem, DrawerContentScrollView } from '@react-navigation/drawer';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
 import HomeScreen from "./Screens/HomeScreen";
 import LoginScreen from "./Screens/LoginScreen";
+
+const Drawer = createDrawerNavigator();
+
 export default class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = { isLoggedIn: false }

@@ -4,7 +4,7 @@ import { StyleSheet, View, TextInput, Image, Button } from 'react-native';
 
 import axios from 'axios';
 
-export class APIScreen extends Component {
+export  class APIScreen extends Component {
     state = {
         response: [],
         estado: false

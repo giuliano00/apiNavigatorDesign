@@ -18,7 +18,7 @@ export class DrawerDefaultNavigator extends Component {
                 <Drawer.Screen name="Home" component={HomeScreen} />
                 <Drawer.Screen name="API" component={APIScreen} />
                 <Drawer.Screen name="APIinfo" component={APIinfo} />
-                 
+
             </Drawer.Navigator>
         );
     }

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 
 
-export class HomeScreen extends Component {
+export default class HomeScreen extends Component {
 
     handlerLogout() {
         this.props.onLogout();
