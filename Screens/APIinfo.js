@@ -6,15 +6,22 @@ import axios from 'axios';
 export default class APIinfo extends Component {
     render() {
         return (
-            <ImageBackground source={require("./appimg/img/aapp.jpg")} style={styles.container}>
+            <View style={styles.container}>
                 <ScrollView>
-                    <Text>..</Text>
+                    <ImageBackground source={require('../app/img/login.jpg')} style={styles.img}>
+                        <View style={styles.container}>
+                            <View style={styles.inner}>
+                            
+                                <Text>..</Text>
 
-                    <Text>Kitsu es una api </Text>
+                                <Text>Kitsu es una api </Text>
 
-                    <StatusBar style="auto" />
+                                <StatusBar style="auto" />
+                            </View>
+                        </View>
+                    </ImageBackground>
                 </ScrollView>
-            </ImageBackground>
+            </View>
         );
     }
 
@@ -23,14 +30,22 @@ export default class APIinfo extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        
+
         alignItems: 'center',
         justifyContent: 'center',
     },
-    box: {
-        flex: 1,
-        textAlign: 'center',
-        padding: '5px'
+
+    img: {
+        width: 360,
+        height: 560,
+    },
+    inner: {
+        width: '80%',
+        height: '50%',
+        backgroundColor: 'rgba(255,255,255,.6)',
+
+        alignItems: 'center',
+        justifyContent: 'center',
 
     },
 
