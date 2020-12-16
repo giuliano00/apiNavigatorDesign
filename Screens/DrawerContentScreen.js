@@ -86,7 +86,12 @@ export class DrawerContentScreen extends Component {
                                         icon={() => <Icon type="material-community" name="pokeball" style={styles.icon} />}
                                         label="Pokemon api"
                                         onPress={() => this.props.navigation.navigate("pokeapi")}
-                                    />                                  
+                                    />      
+                                     <DrawerItem
+                                        icon={() => <Icon type="material-community" name="volume-high" style={styles.icon} />}
+                                        label="sonido "
+                                        onPress={() => this.props.navigation.navigate("sonido")}
+                                    />                            
                                 </View>                           
                             
                             </DrawerContentScrollView>

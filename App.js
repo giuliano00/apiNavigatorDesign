@@ -22,6 +22,8 @@ import chucknorris  from "./Screens/chucknorris";
 import pokeapi  from "./Screens/pokeapi";
 import amiiboapi  from "./Screens/amiiboapi"
 
+import sonido  from "./Screens/sonido"
+
 const Drawer = createDrawerNavigator();
 
 export default class App extends Component {
@@ -69,7 +71,7 @@ export default class App extends Component {
             <Drawer.Screen name="chucknorris" component={chucknorris} />
             <Drawer.Screen name="pokeapi" component={pokeapi} />
 
-
+            <Drawer.Screen name="sonido" component={sonido} />
 
           </Drawer.Navigator>
         </NavigationContainer>

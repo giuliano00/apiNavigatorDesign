@@ -16,6 +16,9 @@ import { amiiboapi } from "../Screens/amiiboapi";
 import { pokeapi } from "../Screens/pokeapi";
 import { Dolar } from "../Screens/Dolar";
 import { chucknorris } from "../Screens/chucknorris";
+
+import { sonido } from "../Screens/sonido";
+
 //import { LoginScreen } from "../Screens/LoginScreen";
 
 const Drawer = createDrawerNavigator();
@@ -38,6 +41,8 @@ export class DrawerDefaultNavigator extends Component {
                 <Drawer.Screen name="pokeapi" component={pokeapi} />
                 <Drawer.Screen name="Dolar" component={Dolar} />
                 <Drawer.Screen name="chucknorris" component={chucknorris} />
+
+                <Drawer.Screen name="sonido" component={sonido} />
 
             </Drawer.Navigator>
         );

@@ -17,9 +17,11 @@ import { chucknorris } from "../Screens/chucknorris";
 import { pokeapi } from "../Screens/pokeapi";
 import { Dolar } from "../Screens/Dolar";
 
+import { sonido } from "../Screens/sonido";
+
 import { LoginScreen } from "../Screens/LoginScreen";
 import { DrawerContentScreen } from "../Screens/DrawerContentScreen";
-console.log(HomeScreen, APIScreen, RaMapi, Cat,Swapi,superheroapi,breakingbadapi,openbrewerydb,amiiboapi,chucknorris,pokeapi,Dolar);
+console.log(HomeScreen, APIScreen, RaMapi, Cat,Swapi,superheroapi,breakingbadapi,openbrewerydb,amiiboapi,chucknorris,pokeapi,Dolar,sonido);
 
 const Drawer = createDrawerNavigator();
 
@@ -45,6 +47,9 @@ export class DrawerCustomNavigator extends Component {
                 <Drawer.Screen name="Dolar" component={Dolar} />
                 <Drawer.Screen name="chucknorris" component={chucknorris} />
                 <Drawer.Screen name="pokeapi" component={pokeapi} />
+
+                <Drawer.Screen name="sonido" component={sonido} />
+
             </Drawer.Navigator>
         );
     }
