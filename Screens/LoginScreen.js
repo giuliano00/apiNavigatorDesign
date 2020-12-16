@@ -35,9 +35,11 @@ export default class LoginScreen extends Component {
             <View style={styles.container}>
                 <ScrollView>
                     <ImageBackground source={require('../app/img/login.jpg')} style={styles.img}>
+                         
                         <View style={styles.container}>
+                            
                             <View style={styles.inner}>
-                                
+                           <ImageBackground source={require('../app/img/luffy.gif')} style={styles.gif}></ImageBackground>
                                 <Button
                                     onPress={() => this._signInWithGoogle()}
                                     title="Iniciar sesión con Google"
@@ -68,6 +70,12 @@ const styles = StyleSheet.create({
     img: {
         width: 360,
         height: 660,
+    },
+    gif: {
+        
+        
+        width: 260,
+        height: 200,
     },
     inner: {
         width: '80%',

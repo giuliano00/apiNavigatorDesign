@@ -9,6 +9,9 @@ export default class HomeScreen extends Component {
         this.props.onLogout();
     }
 
+
+
+
     render() {
         return (
             <View style={styles.container}>
@@ -16,15 +19,15 @@ export default class HomeScreen extends Component {
                     <ImageBackground source={require('../app/img/login.jpg')} style={styles.img}>
                         <View style={styles.container}>
                             <View style={styles.inner}>
-                                
-                                 <Text>Te has loggeado correctamente</Text>
+
+                                <Text>Te has loggeado correctamente</Text>
                                 <Text>..</Text>
 
                                 <Text>Kitsu es una api que trae información de distintos animes a través de un id, también posee
                                 información de mangas y personajes entre otros en el apartado de anime puede traer por
                                 id el titulo las fechas de inicio de fin la duración de los episodios la cantidad de capítulos ,
                                  esta son solo algunos datos que trae la api .</Text>
-                               
+
                                 <Text>..</Text>
                                 <Text>https://kitsu.docs.apiary.io/#introduction/authentication/access-token-responses</Text>
                                 <Text>..</Text>

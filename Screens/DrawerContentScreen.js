@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { DrawerItem, DrawerContentScrollView } from '@react-navigation/drawer';
 import { View, StyleSheet, ImageBackground, Button, ScrollView } from "react-native";
-import { Icon } from 'react-native-elements'
+import { Icon } from 'react-native-elements';
 
 export class DrawerContentScreen extends Component {
 
@@ -18,11 +18,13 @@ export class DrawerContentScreen extends Component {
 
         return (
             <View style={styles.container}>
-                <ScrollView>
+                
                     <ImageBackground source={require('../app/img/sky.jpg')} style={styles.img}>
+                        
                         <View style={styles.container}>
                             
                             <DrawerContentScrollView {...this.props}>
+                                
                                 <View style={styles.topDrawer}>
                                     <DrawerItem
                                         icon={() => <Icon type="material-community" name="home-outline" style={styles.icon} />}
@@ -31,16 +33,66 @@ export class DrawerContentScreen extends Component {
                                     />
                                     <DrawerItem
                                         icon={() => <Icon type="material-community" name="all-inclusive" style={styles.icon} />}
-                                        label="API"
+                                        label="Anime api"
                                         onPress={() => this.props.navigation.navigate("API")}
                                     />
+
                                     <DrawerItem
-                                        icon={() => <Icon type="material-community" name="account" style={styles.icon} />}
-                                        label="APIinfo"
-                                        onPress={() => this.props.navigation.navigate("APIinfo")}
+                                        icon={() => <Icon type="material-community" name="react" style={styles.icon} />}
+                                        label="RaM api"
+                                        onPress={() => this.props.navigation.navigate("RaMapi")}
                                     />
-                                </View>
+                                     <DrawerItem
+                                        icon={() => <Icon type="material-community" name="paw" style={styles.icon} />}
+                                        label="Cat api"
+                                        onPress={() => this.props.navigation.navigate("Cat")}
+                                    />
+                                     <DrawerItem
+                                        icon={() => <Icon type="material-community" name="rocket" style={styles.icon} />}
+                                        label="Strar Wars api"
+                                        onPress={() => this.props.navigation.navigate("Swapi")}
+                                    />
+                                    <DrawerItem
+                                        icon={() => <Icon type="material-community" name="account-question" style={styles.icon} />}
+                                        label="Superhero api"
+                                        onPress={() => this.props.navigation.navigate("superheroapi")}
+                                    />
+                                    <DrawerItem
+                                        icon={() => <Icon type="material-community" name="flask" style={styles.icon} />}
+                                        label="Breaking bad api"
+                                        onPress={() => this.props.navigation.navigate("breakingbadapi")}
+                                    />
+                                    <DrawerItem
+                                        icon={() => <Icon type="material-community" name="glass-mug" style={styles.icon} />}
+                                        label="Bear api"
+                                        onPress={() => this.props.navigation.navigate("openbrewerydb")}
+                                    />
+                                     <DrawerItem
+                                        icon={() => <Icon type="material-community" name="scale-balance" style={styles.icon} />}
+                                        label="Dolar api"
+                                        onPress={() => this.props.navigation.navigate("Dolar")}
+                                    />
+                                    <DrawerItem
+                                        icon={() => <Icon type="material-community" name="tank" style={styles.icon} />}
+                                        label="chucknorris api"
+                                        onPress={() => this.props.navigation.navigate("chucknorris")}
+                                    />
+                                    <DrawerItem
+                                        icon={() => <Icon type="material-community" name="nintendo-switch" style={styles.icon} />}
+                                        label="Mario api"
+                                        onPress={() => this.props.navigation.navigate("amiiboapi")}
+                                    />
+                                     <DrawerItem
+                                        icon={() => <Icon type="material-community" name="pokeball" style={styles.icon} />}
+                                        label="Pokemon api"
+                                        onPress={() => this.props.navigation.navigate("pokeapi")}
+                                    />                                  
+                                </View>                           
+                            
                             </DrawerContentScrollView>
+                            
+
+
                             <View style={styles.bottomDrawer}>
                                 <DrawerItem
                                     icon={() => <Icon type="material-community" name="cogs" style={styles.icon} />}
@@ -57,7 +109,7 @@ export class DrawerContentScreen extends Component {
                         </View>
 
                     </ImageBackground>
-                </ScrollView >
+               
             </View>
         );
     }
@@ -90,7 +142,7 @@ const styles = StyleSheet.create({
 
     },
     img: {
-        width: 360,
+        width: 280,
         height: 650,
     },
     
